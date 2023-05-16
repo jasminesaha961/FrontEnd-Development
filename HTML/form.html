@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table
+        {
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
     
-    <table align="center" border="1" cellspacing="8" callpadding="8" bgcolor="seablue">
+    <table align="center" border="1" cellspacing="8" callpadding="8" bgcolor="seagreen">
         <form>
             <tr><td align="center" colspan="18"> <h1>STUDENT RESITRATION FORM</h1></td></tr>
           <tr>
@@ -22,16 +28,16 @@
             <td colspan="4"><input type =date></td>
             </tr>
         <tr>
-            <td><label>EMAIL ID</label></td><td colspan="4"><input type="email"></td>
         </tr>
         <tr>
             <td><label>GENDER</label></td>
-            <td><input type="radio"value="Gender">male</td>
-            <td><input type="radio"value="Gender">female</td>
+            <td><input type="radio"  name="gender" checked>male</td>
+            <td><input type="radio"  name="gender">female</td>
         </tr>
             <tr>
                 <td>
                     <label>CONTACT NUMBER</label>
+        <td><label>EMAIL ID</label></td><td colspan="4"><input type="email"></td>
                 </td>
                 <td colspan="4"><input type ="tele"> </td>
             </tr>
@@ -51,7 +57,7 @@
              <td><label>STATE</label></td>
              <td colspan="4">
                 <select>
-                    <option>select any one</option>
+                    <option selected hidden>select any one</option>
                     <option>tamilnadu</option>
                     <option>kerala</option>
                     <option>karnataka</option>
